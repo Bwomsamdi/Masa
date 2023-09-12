@@ -1,0 +1,120 @@
+.hero {
+  background: #98b8e5 url("../img/hero1-desktop.jpg") center no-repeat;
+  background-size: cover;
+  padding-bottom: 60px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    padding-bottom: 85px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+}
+
+.hero__wrapper {
+  //position: relative;
+  padding-top: 363px;
+
+  @media (max-width: 1199px) {
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 68px;
+  }
+}
+
+.hero__text-wrapper h1 {
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 62px;
+  color: $color-neon-blue;
+  padding: 40px 50px 30px 50px;
+  background-color: $color-default-white;
+  border-radius: 0 30px 30px 0;
+
+  @media (max-width: 1199px) {
+    font-size: 56px;
+    line-height: 56px;
+    padding-bottom: 13px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.hero__text-conteiner {
+  display: flex;
+  gap: 30px;
+  padding: 0 50px 35px 50px;
+  background-color: $color-default-white;
+  border-radius: 0 0 30px 30px;
+  max-width: 772px;
+}
+
+.hero__text-conteiner p {
+  max-width: 450px;
+
+  @media (max-width: 1199px) {
+    margin: 0 auto;
+    padding-bottom: 29px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 21px;
+  }
+}
+
+.hero__text-wrapper .btn {
+  //display: block;
+
+  @media (max-width: 1199px) {
+    //margin-bottom: 50px;
+    //max-width: 206px;
+    //margin-left: auto;
+    //margin-right: auto;
+  }
+
+  @media (max-width: 767px) {
+   // margin-bottom: 50px;
+    //max-width: 100%;
+    //margin-right: 55px;
+    //margin-left: 55px;
+  }
+}
+
+.hero__slider-wrapper .swiper-pagination-bullet {
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  opacity: 1;
+
+  @media screen and (max-width: 767px) {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.hero__slider-wrapper .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
+}
+
+.hero__slider-wrapper .swiper-pagination {
+  text-align: right;
+  bottom: 12px;
+  left: auto;
+  right: -7px;
+
+  @media (max-width: 1199px) {
+    text-align: center;
+    bottom: 0;
+    left: 0;
+  }
+}
