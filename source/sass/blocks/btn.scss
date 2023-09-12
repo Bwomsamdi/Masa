@@ -29,14 +29,20 @@
   @include hover-focus {
     opacity: 0.8;
   }
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 16.5px 20px 16.5px 20px;
+  }
 }
 
 .btn::after {
   content: "";
   position: absolute;
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 34x;
+  height: 34px;
   top: 5px;
   right: 4px;
   background-color: $color-neon-blue;

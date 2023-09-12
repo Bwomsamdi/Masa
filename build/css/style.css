@@ -1555,13 +1555,20 @@ button,
 .btn.focus-visible:focus {
   opacity: 0.8;
 }
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 16.5px 20px 16.5px 20px;
+  }
+}
 
 .btn::after {
   content: "";
   position: absolute;
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 34x;
+  height: 34px;
   top: 5px;
   right: 4px;
   background-color: #316dc2;
@@ -2436,13 +2443,13 @@ button,
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    padding-bottom: 85px;
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 767px) {
   .hero {
     width: 100%;
-    padding-bottom: 32px;
+    padding-bottom: 20px;
   }
 }
 
@@ -2451,8 +2458,7 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__wrapper {
-    text-align: center;
-    padding-top: 100px;
+    padding-top: 630px;
   }
 }
 @media (max-width: 767px) {
@@ -2473,15 +2479,16 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__text-wrapper h1 {
-    font-size: 56px;
-    line-height: 56px;
-    padding-bottom: 13px;
+    font-size: 36px;
+    line-height: 44px;
+    padding: 30px 40px 24px 40px;
   }
 }
 @media screen and (max-width: 767px) {
   .hero__text-wrapper h1 {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 20px 15px 16px 14px;
   }
 }
 
@@ -2495,21 +2502,38 @@ button,
   border-radius: 0 0 30px 30px;
   max-width: 772px;
 }
+@media (max-width: 1199px) {
+  .hero__text-conteiner {
+    max-width: 591px;
+    padding: 0 40px 35px 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__text-conteiner {
+    display: block;
+    max-width: 261px;
+    padding: 0 15px 10px 15px;
+  }
+}
 
 .hero__text-conteiner p {
   max-width: 450px;
 }
 @media (max-width: 1199px) {
   .hero__text-conteiner p {
-    margin: 0 auto;
-    padding-bottom: 29px;
+    line-height: 20px;
   }
 }
 @media screen and (max-width: 767px) {
   .hero__text-conteiner p {
-    font-size: 15px;
-    line-height: 20px;
-    padding-bottom: 21px;
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero__text-wrapper .btn {
+    margin-top: 10px;
   }
 }
 
